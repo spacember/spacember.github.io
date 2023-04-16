@@ -1,159 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <script src="index.js"></script>
-</head>
+  </head>
 
-<body>
-    <!-- responsive navigation bar -->
+  <body>
     <nav id="navbar" class="navbar">
-        <div class="navbar__logo">
-            <span>Aditya</span>
-        </div>
+      <div class="navbar__logo">
+        <span>Aditya</span>
+      </div>
 
-        <div class="navbar__items" id="navbarItems">
-            <ul>
-                <li><span>Home</span></li>
-                <li><span>Works</span></li>
-                <li><span>About</span></li>
-                <li><span>Projects</span></li>
-            </ul>
-            <button id="buttonLetsChat" class="button button--lets-chat">
-                <span>Let's chat</span>
-            </button>
-        </div>
+      <div class="navbar__items" id="navbarItems">
+        <ul>
+          <li><span>Home</span></li>
+          <li><span>Works</span></li>
+          <li><span>About</span></li>
+          <li><span>Projects</span></li>
+        </ul>
+        <button id="buttonLetsChat" class="button button--lets-chat">
+          <span>Let's chat</span>
+        </button>
+      </div>
 
-        <a class="navbar__hamberger-icon" onclick="toggleNavbar()">
-            <i class="fa fa-bars fa-2xl"></i>
-        </a>
+      <a class="navbar__hamberger-icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars fa-2xl"></i>
+      </a>
     </nav>
 
     <section id="introduction" class="introduction">
+      <article>
         <h1 class="introduction__title">
-            <span>Hi! I am </span>
-            <i class="fa-solid fa-code"></i>
-            <br />
-            Aditya Ramdonee
+          <span>Hi! I am </span>
+          <i class="fa-solid fa-code"></i>
+          <br />
+          Aditya Ramdonee
         </h1>
 
-        <h6 class="introduction__body">
-            My journey as a professional software engineer started
-            <span class="introduction__body--bold">1.5 years</span> ago.
-        </h6>
+        <p class="introduction__body">
+          My journey as a professional software engineer started
+          <strong>1.5 years</strong> ago.
+        </p>
 
         <div class="introduction__body_options">
-            <button id="buttonHireMe" class="button button--hire-me">
-                Hire Me
-            </button>
-            <button id="buttonViewProjects" class="button button--view-projects">
-                Projects
-                <span class="button--view-projects-icon">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </span>
-            </button>
+          <button id="buttonHireMe" class="button button--hire-me">
+            Hire Me
+          </button>
+          <button id="buttonViewProjects" class="button">
+            Projects
+            <span class="view-projects-icon">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </button>
         </div>
+      </article>
 
-        <div class="introduction__info">
-            <h4>+4</h4>
-            <h6>Companies I worked with</h6>
-            <div class="introduction__info--flex">
-                <div>
-                    <h4>+1</h4>
-                    <h6>Projects done</h6>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <h6>aramdonee16@gmail.com</h6>
-                </div>
-            </div>
+      <article class="introduction__info">
+        <div>
+          <p>+4</p>
+          <p>Companies I have worked for</p>
         </div>
+        <div>
+          <p>+1</p>
+          <p>Projects completed</p>
+        </div>
+        <div>
+          <p>Contact</p>
+          <p>aramdonee16@gmail.com</p>
+        </div>
+      </article>
 
-        <a href="#portrait" class="arrow-down">
-            <i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i>
-        </a>
+      <a href="#portrait" class="arrow-down">
+        <i class="fa-solid fa-arrow-down fa-bounce fa-2xl"></i>
+      </a>
     </section>
 
     <section id="portrait" class="portrait">
-        <div class="portrait__description">
-            <h1 class="portrait__description_title">Grow your business</h1>
+      <article class="portrait__description">
+        <h2 class="portrait__description_title">Grow your business</h2>
 
-            <p class="portrait__description_body">
-                Wanna expand your business and attract more potential paying clients?
-                <br />My friend, you have come to the right place!
-            </p>
-        </div>
+        <h6 class="portrait__description_body">
+          Wanna expand your business and attract more potential paying clients?
+          <br />My friend, you have come to the right place!
+        </h6>
+      </article>
 
-        <div class="portrait__links">
-            <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-        </div>
+      <article class="portrait__links">
+        <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+      </article>
     </section>
 
-    <section id="skills" class="skills">
-        <div class="skills__technical">
-            <h2 class="skills__technical_title">Technical skills</h2>
-            <ul>
-                <li><span>html</span> <i class="fa-solid fa-face-smile"></i></li>
-                <li><span>css</span> <i class="fa-solid fa-face-smile"></i></li>
-                <li>
-                    <span>JavaScript</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li>
-                    <span>TypeScript</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li><span>Angular</span> <i class="fa-solid fa-face-smile"></i></li>
-                <li>
-                    <span>Angular Material</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li>
-                    <span>Spring Boot</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li><span>Bootstrap</span> <i class="fa-solid fa-face-smile"></i></li>
-                <li>
-                    <span>Tailwind css</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li>
-                    <span>Google Apps Script</span>
-                    <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li>
-                    <span>Velo by Wix</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-            </ul>
-        </div>
-        <div class="skills__soft">
-            <h2 class="skills__soft_title">Soft skills</h2>
-            <ul>
-                <li>
-                    <span>Problem solving</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li><span>Teamwork</span> <i class="fa-solid fa-face-smile"></i></li>
-                <li>
-                    <span>Effective communication</span>
-                    <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li>
-                    <span>Open mindedness</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-                <li><span>Integrity</span> <i class="fa-solid fa-face-smile"></i></li>
-                <li>
-                    <span>Adaptability</span> <i class="fa-solid fa-face-smile"></i>
-                </li>
-            </ul>
-        </div>
+    <section class="skills">
+      <article class="skills__technical">
+        <h3>Technical skills</h3>
+        <br />
+        <ul>
+          <li>
+            <h5>html</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>css</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>JavaScript</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>TypeScript</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Angular</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Angular Material</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Spring Boot</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Bootstrap</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Tailwind css</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Google Apps Script</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Velo by Wix</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+        </ul>
+      </article>
+      <article class="skills__soft">
+        <h3>Soft skills</h3>
+        <br />
+        <ul>
+          <li>
+            <h5>Problem solving</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Teamwork</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Effective communication</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Open mindedness</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Integrity</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+          <li>
+            <h5>Adaptability</h5>
+            <i class="fa-solid fa-face-smile"></i>
+          </li>
+        </ul>
+      </article>
 
-        <a href="#navbar" class="arrow-up">
-            <i class="fa-solid fa-arrow-up fa-bounce fa-2xl"></i>
-        </a>
+      <a href="#navbar" class="arrow-up">
+        <i class="fa-solid fa-arrow-up fa-bounce fa-2xl"></i>
+      </a>
     </section>
-</body>
-
+  </body>
 </html>

@@ -1,187 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap");
+
 * {
-    margin: 0%;
-    padding: 0%;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Noto Sans Mono", sans-serif;
+  color: white;
+}
+
+.button {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+article {
+  padding: 2rem;
+  position: relative;
+  color: white;
 }
 
 /* navigation bar */
 .navbar {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar__items {
-    display: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  display: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .navbar__items ul li {
-    list-style-type: none;
-}
-
-.button {
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: .25rem;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  list-style-type: none;
 }
 
 .button--lets-chat {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .navbar__hamberger-icon {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
+  position: absolute;
+  right: 2rem;
 }
 
 /* 
     desktop: upper-left section 
     mobile: first section
 */
+
 .introduction {
-    height: calc(100vh - 64px - 19.2px);
-    position: relative;
+  background-image: url("assets/images/scenic-view-mauritius.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 52px);
+  position: relative;
 }
 
-.introduction__title {
-    padding: 0 2rem;
+/* makes no sense */
+.introduction::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .introduction__title i {
-    color: yellow;
+  color: rgb(0, 13, 255);
 }
 
 .introduction__body {
-    padding: 2rem;
-}
-
-.introduction__body_options {
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
+  padding: 2rem 0;
 }
 
 .button--hire-me {
-    background-color: rgb(59, 145, 198);
-    color: black;
+  background-color: rgb(5, 17, 179);
 }
 
-.button--view-projects-icon {
-    padding-left: 0.25rem;
+.view-projects-icon {
+  padding-left: 0.25rem;
 }
 
-.introduction__info {
-    padding: 2rem;
-}
-
-.introduction__info--flex {
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-between;
+.introduction__info div {
+  font-size: smaller;
+  padding-bottom: 1rem;
 }
 
 .arrow-down {
-    position: absolute;
-    width: 100%;
-    bottom: 3rem;
-    text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  width: 100%;
 }
 
 /* 
     desktop: right section 
     mobile: second section
 */
+
 .portrait {
-    height: 100vh;
-    background-image: url("assets/images/author-portrait.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 50%;
-    position: relative;
-    text-align: center;
+  height: 100vh;
+  background-image: url("assets/images/green-plant.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.portrait::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .portrait__description {
-    position: absolute;
-    width: 100%;
-    top: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .portrait__description_title {
-    padding-bottom: 2rem;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .portrait__description_body {
-    width: 75%;
+  padding: 1rem;
+  text-align: center;
 }
 
 .portrait__links {
-    width: 100%;
-    position: absolute;
-    bottom: 25%;
-    display: flex;
-    justify-content: center;
-}
-
-.portrait__links a {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* 
     desktop: bottom-left section
     mobile: third section
 */
+
 .skills {
-    background-image: url("assets/images/cozy-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 75%;
-    height: 100vh;
-    position: relative;
+  background-image: url("assets/images/dark-beach.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
-.skills div {
-    padding: 2rem;
+.skills::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.skills div ul {
-    padding: 1rem 0;
-}
-
-.skills div ul li {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+.skills__technical ul li,
+.skills__soft ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .arrow-up {
-    position: absolute;
-    width: 100%;
-    bottom: 3rem;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  text-align: center;
 }
 
-@media only screen and (min-width: 640px) {}
+@media only screen and (min-width: 640px) {
+}
 
 @media only screen and (min-width: 768px) {
-    .navbar {
+  /* .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3rem 6rem;
-    }
+    } */
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+}
