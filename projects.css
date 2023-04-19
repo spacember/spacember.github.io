@@ -1,0 +1,39 @@
+@import "globalstyle.css";
+
+/* ------------------------------- section best project ------------------------------- */
+
+.best_project {
+  height: calc(100vh - 4rem);
+  background-color: var(--color-background);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.best_project article p {
+  text-align: justify;
+}
+
+/* ------------------------------- section projects ------------------------------- */
+
+.projects {
+  background-color: var(--color-background);
+  padding: 2rem;
+}
+
+.projects .projects__title {
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+/* ------------------------------- footer ------------------------------- */
+
+.footer {
+  background-color: var(--color-secondary);
+}
+
+.footer .footer__contact {
+    text-align: center;
+    padding-bottom: 2rem;
+}

@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap");
+
+:root {
+  --font-primary: "Open Sans";
+  --font-secondary: "Pt Sans";
+  --color-background: #24293d;
+  --color-secondary: #2f3855;
+  --color-text: #f4f5fc;
+  --color-accent: #8ebbff;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: var(--font-secondary), sans-serif;
+  color: var(--color-text);
+}
+
+.text-small {
+  font-size: small;
+}
+
+/* ------------------------------- navbar ------------------------------- */
+
+.navbar {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+}
+
+.navbar .navbar__logo {
+  padding: 2rem;
+}
+
+.navbar .navbar__items {
+  display: none;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.navbar .navbar__items ul li {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar .navbar__items ul li a {
+  text-decoration: none;
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: calc(100% - 2rem);
+  overflow: hidden;
+  border-radius: 10rem;
+  position: relative;
+}
+
+.navbar .navbar__items ul li a:hover {
+  background-color: var(--color-accent);
+  color: black;
+}
+
+.navbar .navbar__items--icon {
+  color: var(--color-background);
+  position: absolute;
+  transform: translate(-50%, 50%);
+  right: calc(-1.4rem);
+  bottom: 50%;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: var(--color-accent);
+  border-radius: 10rem;
+}
+
+.navbar .navbar__hamberger_icon {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.button {
+  padding: 0.75rem 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--color-accent);
+  color: black;
+  box-shadow: 3px 3px 5px black;
+}
+
+.button i {
+  color: black;
+}
+
+/* ------------------------------- buttons ------------------------------- */
+
+#buttonLetsChat {
+  float: right;
+  margin: 1rem 0 0;
+}
+
+#buttonArrowUp {
+  display: none;
+  position: fixed;
+  transform: translate(-50%, 50%);
+  right: 0;
+  bottom: 7rem;
+  padding: 1rem 1.3rem;
+  border-radius: 10rem;
+  z-index: 100;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+}
+#buttonArrowDown {
+  position: fixed;
+  transform: translate(-50%, 50%);
+  right: 0;
+  bottom: 3rem;
+  padding: 1rem 1.3rem;
+  border-radius: 10rem;
+  z-index: 100;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+}
+
+#buttonViewProjects {
+  margin-left: 1rem;
+}
+
+#buttonViewLiveBestProject {
+  margin-left: 1rem;
+}
+
+/* ------------------------------- card ------------------------------- */
+
+.card {
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card-body {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.card-options {
+  padding: 1rem;
+  display: flex;
+  justify-content: end;
+}
+
+/* ------------------------------- not yet sorted ------------------------------- */
+
+article {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-media {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 640px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}

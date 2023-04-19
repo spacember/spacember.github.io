@@ -1,0 +1,83 @@
+/* Issues 
+  1. width 100vh and adding padding overflows y
+*/
+
+@import "globalstyle.css";
+
+section,
+aside {
+  background-color: var(--color-background);
+}
+
+/* ------------------------------- section introduction ------------------------------- */
+
+.introduction {
+  height: calc(100vh - 4rem);
+  padding: 2rem;
+}
+
+.introduction .introduction__body .introduction__body-title {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.introduction .introduction__options {
+  display: flex;
+  justify-content: end;
+}
+
+.introduction .introduction__info div {
+  padding-bottom: 0.5rem;
+}
+
+.introduction .introduction__info div p:first-child {
+  font-size: x-large;
+}
+
+/* ------------------------------- section portrait ------------------------------- */
+
+.portrait {
+  height: 100vh;
+  background: no-repeat top center url("assets/images/a-happy-employee.jpg");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.portrait .portrait__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.portrait .portrait__description_title {
+  font-size: xx-large;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.portrait .portrait__description_body {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ------------------------------- section skills ------------------------------- */
+
+.skills {
+  height: calc(100vh - 4rem);
+  padding: 2rem;
+  position: relative;
+}
+
+.skills article {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skills article ul li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.25rem;
+}
