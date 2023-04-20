@@ -18,16 +18,14 @@
   </head>
   <body>
     <nav id="navbar" class="navbar">
-
-      <div class="navbar-container">
-        <a class="navbar-logo" href="index.html">Aditya</a>
-
-        <a class="navbar-hamberger_icon" onclick="toggleNavbar()">
+      <div class="navbar__container">
+        <a class="navbar__logo" href="index.html">Aditya</a>
+        <a class="navbar__hamberger_icon" onclick="toggleNavbar()">
           <i class="fa fa-bars fa-2xl"></i>
         </a>
       </div>
 
-      <div id="navbarItems" class="navbar-items">
+      <section id="navbarItems" class="navbar__items">
         <ul>
           <li>
             <a href="index.html"
@@ -47,22 +45,15 @@
           </li>
         </ul>
 
-        <button id="buttonLetsChat" class="button button-chat">
-          Let's chat
-        </button>
-      </div>
+        <button class="button button-medium">Let's chat</button>
+      </section>
 
-      <button
-        id="buttonArrowUp"
-        onclick="goTop()"
-        class="button button-arrow button-arrow-up"
-      >
+      <button id="buttonArrowUp" class="button button-arrow button-arrow-up">
         <i class="fa-solid fa-arrow-up"></i>
       </button>
 
       <button
         id="buttonArrowDown"
-        onclick="goToNextSection()"
         class="button button-arrow button-arrow-down"
       >
         <i class="fa-solid fa-arrow-down"></i>
@@ -71,87 +62,67 @@
 
     <header id="bestProject" class="best_project">
       <article class="best_project__introduction">
-        <p class="text-xl">My projects</p>
-        <br />
-        <p>
+        <p class="text-xxl">My projects</p>
+        <p class="text-justify">
           Coding is my passion. I do it at work, in my free time, on weekends
           and sometimes I even dream about code and sometimes I wake up with the
           solution I've been looking for.
         </p>
       </article>
       <section class="card">
-        <img
-          class="card-image"
-          src="assets/images/scenic-view-mauritius.jpg"
-          alt="Avatar"
-          style="width: 100%"
-        />
-        <div class="card-body">
-          <h4><b>Some project</b></h4>
-          <br />
+        <img class="card-image" src="assets/images/scenic-view-mauritius.jpg" />
+        <div>
+          <span class="text-xl">Some project</span>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod?
           </p>
         </div>
         <div class="card-options">
-          <button class="button">
+          <button class="button button-medium">
             GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </button>
-          <button class="button">
+          <button class="button button-medium">
             View live <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </button>
         </div>
       </section>
     </header>
 
-    <div class="titleContainer">
-      <p class="title text-xl">Explore more!</p>
+    <div class="separator">
+      <p class="separator__title text-xl">Explore more!</p>
     </div>
 
     <section id="projects" class="projects">
       <section class="card">
-        <img
-          class="card-image"
-          src="assets/images/scenic-view-mauritius.jpg"
-          alt="Avatar"
-          style="width: 100%"
-        />
-        <div class="card-body">
-          <h4><b>Some project</b></h4>
-          <br />
+        <img class="card-image" src="assets/images/scenic-view-mauritius.jpg" />
+        <div>
+          <span class="text-xl">Some project</span>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod?
           </p>
         </div>
         <div class="card-options">
-          <button id="buttonGitHubBestproject" class="button">
+          <button class="button button-medium">
             GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </button>
-          <button id="buttonViewLiveBestProject" class="button">
+          <button class="button button-medium">
             View live <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </button>
         </div>
       </section>
-      <br />
       <section class="card">
-        <img
-          class="card-image"
-          src="assets/images/scenic-view-mauritius.jpg"
-          alt="Avatar"
-          style="width: 100%"
-        />
-        <div class="card-body">
-          <h4><b>Some project</b></h4>
-          <br />
+        <img class="card-image" src="assets/images/scenic-view-mauritius.jpg" />
+        <div>
+          <span class="text-xl">Some project</span>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quod?
           </p>
         </div>
         <div class="card-options">
-          <button id="buttonGitHubBestproject" class="button">
+          <button class="button button-medium">
             GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </button>
-          <button id="buttonViewLiveBestProject" class="button">
+          <button class="button button-medium">
             View live <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </button>
         </div>
@@ -164,13 +135,11 @@
         <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
       </div>
-      <section class="footer__contact">
-        <ul>
-          <li>&copy Aditya Ramdonee</li>
-          <li>aramdonee16@gmail.com</li>
-          <li>+230 5776 7864</li>
-        </ul>
-      </section>
+      <ul class="footer__contact">
+        <li>&copy Aditya Ramdonee</li>
+        <li>aramdonee16@gmail.com</li>
+        <li>+230 5776 7864</li>
+      </ul>
     </footer>
   </body>
 </html>

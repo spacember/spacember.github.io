@@ -18,118 +18,108 @@
   </head>
 
   <body>
-    <nav id="navbar" class="navbar">
-      <div class="navbar-container">
-        <a class="navbar-logo" href="index.html">Aditya</a>
+    <section id="topSection" class="top_section">
+      <nav id="navbar" class="navbar">
+        <div class="navbar__container">
+          <a class="navbar__logo" href="index.html">Aditya</a>
+          <a class="navbar__hamberger_icon" onclick="toggleNavbar()">
+            <i class="fa fa-bars fa-2xl"></i>
+          </a>
+        </div>
 
-        <a class="navbar-hamberger_icon" onclick="toggleNavbar()">
-          <i class="fa fa-bars fa-2xl"></i>
-        </a>
-      </div>
+        <section id="navbarItems" class="navbar__items">
+          <ul>
+            <li>
+              <a href="index.html"
+                >Home<i class="fa-solid fa-house-chimney"></i
+              ></a>
+            </li>
+            <li>
+              <a href="projects.html"
+                >Projects<i class="fa-solid fa-list-check"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#">About<i class="fa-solid fa-circle-question"></i></a>
+            </li>
+            <li>
+              <a href="#">Contact<i class="fa-solid fa-phone"></i></a>
+            </li>
+          </ul>
 
-      <div id="navbarItems" class="navbar-items">
-        <ul>
-          <li>
-            <a href="index.html"
-              >Home<i class="fa-solid fa-house-chimney"></i
-            ></a>
-          </li>
-          <li>
-            <a href="projects.html"
-              >Projects<i class="fa-solid fa-list-check"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#">About<i class="fa-solid fa-circle-question"></i></a>
-          </li>
-          <li>
-            <a href="#">Contact<i class="fa-solid fa-phone"></i></a>
-          </li>
-        </ul>
+          <button class="button button-medium">Let's chat</button>
+        </section>
 
-        <button id="buttonLetsChat" class="button button-chat">
-          Let's chat
+        <button id="buttonArrowUp" class="button button-arrow button-arrow-up">
+          <i class="fa-solid fa-arrow-up"></i>
         </button>
-      </div>
 
-      <button
-        id="buttonArrowUp"
-        onclick="goTop()"
-        class="button button-arrow button-arrow-up"
-      >
-        <i class="fa-solid fa-arrow-up"></i>
-      </button>
+        <button
+          id="buttonArrowDown"
+          class="button button-arrow button-arrow-down"
+        >
+          <i class="fa-solid fa-arrow-down"></i>
+        </button>
+      </nav>
+      <section id="topSectionFlex" class="top_section-flex">
+        <section id="introduction" class="introduction">
+          <article>
+            <p class="text-xxl">
+              Hi! I am
+              <i class="fa-solid fa-code"></i>
+              <br />
+              Aditya Ramdonee
+            </p>
+            <p>
+              My journey as a professional web developer started
+              <strong>1.5 years</strong> ago.
+            </p>
+          </article>
+          <div class="introduction-options">
+            <button class="button button-large button-shadow">Hire Me</button>
+            <button
+              class="button button-large button-shadow button-view_projects"
+              onclick="viewProjects()"
+            >
+              Projects <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+          <article class="introduction-info">
+            <div>
+              <span class="text-xl">+4</span>
+              <p>Companies I have worked for</p>
+            </div>
+            <div>
+              <span class="text-xl">+1</span>
+              <p>Projects completed</p>
+            </div>
+            <div>
+              <span class="text-xl">Contact</span>
+              <p>aramdonee16@gmail.com</p>
+            </div>
+          </article>
+        </section>
+        <section id="portrait" class="portrait">
+          <div class="portrait-description">
+            <span class="text-xxl">Let's grow together</span>
 
-      <button
-        id="buttonArrowDown"
-        onclick="goToNextSection()"
-        class="button button-arrow button-arrow-down"
-      >
-        <i class="fa-solid fa-arrow-down"></i>
-      </button>
-    </nav>
-    <!-- no need topsection -->
-    <section id="topSection">
-      <section id="introduction" class="introduction">
-        <article>
-          <p class="text-xl">
-            Hi! I am
-            <i class="fa-solid fa-code"></i>
-            <br />
-            Aditya Ramdonee
-          </p>
-          <p class="text-sm">
-            My journey as a professional web developer started
-            <strong>1.5 years</strong> ago.
-          </p>
-        </article>
-        <div class="introduction-options">
-          <button class="button">Hire Me</button>
-          <button
-            id="buttonViewProjects"
-            class="button"
-            onclick="viewProjects()"
-          >
-            Projects <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </button>
-        </div>
-        <article class="introduction-info">
-          <div>
-            <p>+4</p>
-            <p class="text-sm">Companies I have worked for</p>
+            <p>
+              You wish to expand your business and bring in more revenue ?
+              <br />You are at the right place.
+            </p>
           </div>
-          <div>
-            <p>+1</p>
-            <p class="text-sm">Projects completed</p>
+
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
           </div>
-          <div>
-            <p>Contact</p>
-            <p class="text-sm">aramdonee16@gmail.com</p>
-          </div>
-        </article>
+        </section>
       </section>
-
-      <aside id="portrait" class="portrait">
-        <div class="portrait-description">
-          <span class="text-xxl">Let's grow together</span>
-
-          <p>
-            You wish to expand your business and bring in more revenue ?
-            <br />You are at the right place.
-          </p>
-        </div>
-
-        <div class="social-media">
-          <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-        </div>
-      </aside>
     </section>
     <section id="skills" class="skills">
       <article>
-        <h3>Technical skills</h3>
-        <br />
+        <span class="text-xl">Technical skills</span>
         <ul>
           <li>
             html
@@ -178,8 +168,7 @@
         </ul>
       </article>
       <article>
-        <h3>Soft skills</h3>
-        <br />
+        <span class="text-xl">Soft skills</span>
         <ul>
           <li>
             Problem solving
