@@ -11,73 +11,115 @@ aside {
 
 /* ------------------------------- section introduction ------------------------------- */
 
+#topSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .introduction {
-  height: calc(100vh - 4rem);
-  padding: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
 }
 
-.introduction .introduction__body .introduction__body-title {
-  font-size: x-large;
-  font-weight: 600;
+.introduction article {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
-.introduction .introduction__options {
+.introduction .introduction-options {
   display: flex;
   justify-content: end;
+  gap: 1rem;
 }
 
-.introduction .introduction__info div {
-  padding-bottom: 0.5rem;
-}
-
-.introduction .introduction__info div p:first-child {
+.introduction .introduction-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   font-size: x-large;
 }
 
 /* ------------------------------- section portrait ------------------------------- */
 
 .portrait {
-  height: 100vh;
+  min-height: 500px;
+  height: 600px;
+  width: 100%;
   background: no-repeat top center url("assets/images/a-happy-employee.jpg");
-  position: relative;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
-.portrait .portrait__description {
+.portrait .portrait-description {
   display: flex;
   flex-direction: column;
-}
-
-.portrait .portrait__description_title {
-  font-size: xx-large;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.portrait .portrait__description_body {
-  padding: 1rem;
-  text-align: center;
+  gap: 1rem;
 }
 
 /* ------------------------------- section skills ------------------------------- */
 
 .skills {
-  height: calc(100vh - 4rem);
-  padding: 2rem;
-  position: relative;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .skills article {
   background-color: var(--color-secondary);
   padding: 1rem;
   border-radius: 1rem;
-  margin-bottom: 1rem;
 }
 
 .skills article ul li {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.25rem;
+}
+
+/* ------------------------------- media queries ------------------------------- */
+
+@media only screen and (min-width: 640px) {
+  .skills {
+    padding: 2rem 1rem;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .skills article {
+    border-radius: 1rem;
+    width: 50%;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #topSection {
+    flex-direction: row;
+    padding: 0 2rem;
+  }
+
+  .introduction {
+    padding: 0;
+  }
+
+  .portrait {
+    border-radius: 1rem;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
 }
