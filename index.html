@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <section id="topSection" class="top_section">
+    <section id="hero" class="hero">
       <nav id="navbar" class="navbar">
         <div class="navbar__container">
           <a class="navbar__logo" href="index.html">Aditya</a>
@@ -61,13 +61,14 @@
           <i class="fa-solid fa-arrow-down"></i>
         </button>
       </nav>
-      <section id="topSectionFlex" class="top_section-flex">
-        <section id="introduction" class="introduction">
-          <article>
+      <section id="hero-flex" class="hero-flex">
+        <section id="heroIntroduction" class="hero__introduction">
+          <article class="hero__title">
+            <p class="text-xl">
+              Hi! I am 
+              <i class="fa-solid fa-code"></i> <br />
+            </p>
             <p class="text-xxl">
-              Hi! I am
-              <i class="fa-solid fa-code"></i>
-              <br />
               Aditya Ramdonee
             </p>
             <p>
@@ -75,7 +76,7 @@
               <strong>1.5 years</strong> ago.
             </p>
           </article>
-          <div class="introduction-options">
+          <div class="hero__options">
             <button class="button button-large button-shadow">Hire Me</button>
             <button
               class="button button-large button-shadow button-view_projects"
@@ -84,10 +85,10 @@
               Projects <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </button>
           </div>
-          <article class="introduction-info">
+          <article class="hero__info">
             <div>
               <span class="text-xl">+4</span>
-              <p>Companies I have worked for</p>
+              <p class="text-sm">Companies I have worked for</p>
             </div>
             <div>
               <span class="text-xl">+1</span>
@@ -99,10 +100,9 @@
             </div>
           </article>
         </section>
-        <section id="portrait" class="portrait">
-          <div class="portrait-description">
+        <section id="heroPortrait" class="hero__portrait">
+          <div class="hero__portrait-description">
             <span class="text-xxl">Let's grow together</span>
-
             <p>
               You wish to expand your business and bring in more revenue ?
               <br />You are at the right place.
@@ -118,9 +118,9 @@
       </section>
     </section>
     <section id="skills" class="skills">
-      <article>
+      <article class="skills__technical">
         <span class="text-xl">Technical skills</span>
-        <ul>
+        <ul class="skills__technical_list">
           <li>
             html
             <i class="fa-solid fa-face-smile"></i>
@@ -167,9 +167,9 @@
           </li>
         </ul>
       </article>
-      <article>
+      <article class="skills__soft">
         <span class="text-xl">Soft skills</span>
-        <ul>
+        <ul class="skills__soft_list">
           <li>
             Problem solving
             <i class="fa-solid fa-face-smile"></i>

@@ -1,50 +1,53 @@
 @import "globalstyle.css";
 
-section {
-  background-color: var(--color-background);
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 1rem;
 }
 
 /* ------------------------------- section introduction ------------------------------- */
 
-.top_section-flex {
+.hero__introduction {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2rem;
 }
 
-.introduction {
-  padding: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: stretch;
-  justify-content: center;
-}
-
-.introduction article {
+.hero__introduction > *:not(.hero__options) {
   background-color: var(--color-secondary);
-  padding: 1rem;
   border-radius: 1rem;
+  padding: 1rem;
+}
+
+.hero__title{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.introduction-options {
+.hero__options {
   display: flex;
   justify-content: end;
   gap: 1rem;
 }
 
+.hero__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: var(--color-secondary);
+}
+
 /* ------------------------------- section portrait ------------------------------- */
 
-.portrait {
-  min-height: 500px;
-  height: 600px;
-  width: 100%;
-  background: no-repeat top center url("assets/images/a-happy-employee.jpg");
-  background-size: cover;
+.hero__portrait {
+  height: 100vh;
+  border-radius: 1rem;
+  background: no-repeat top center/cover
+    url("assets/images/a-happy-employee.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -52,7 +55,7 @@ section {
   text-align: center;
 }
 
-.portrait .portrait-description {
+.hero__portrait-description {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -61,29 +64,30 @@ section {
 /* ------------------------------- section skills ------------------------------- */
 
 .skills {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.skills article {
+.skills__technical,
+.skills__soft {
   background-color: var(--color-secondary);
   padding: 1rem;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
-.skills article ul {
+.skills__technical_list,
+.skills__soft_list {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.skills article ul li {
+.skills__technical_list li,
+.skills__soft_list li {
   display: flex;
   justify-content: space-between;
 }
@@ -94,41 +98,53 @@ section {
 }
 
 @media only screen and (min-width: 768px) {
-  .top_section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .top_section-flex {
+  .hero-flex {
     flex-direction: row;
-    flex-grow: 1;
-    padding: 0rem 2rem 2rem 2rem;
-    justify-content: end;
+    padding: 0 2rem;
+    justify-content: center;
   }
-
-  .introduction {
-    padding: 0;
-    max-width: 50%;
-  }
-
-  .portrait {
-    min-height: 0;
-    height: 100%;
-    width: calc(50% - 1rem);
-    border-radius: 1rem;
+  .hero__introduction,
+  .hero__portrait {
+    width: 50%;
+    height: auto;
   }
   .skills {
     padding: 2rem;
     flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 
-  .skills article {
-    border-radius: 1rem;
+  .skills__technical,
+  .skills__soft {
     width: 50%;
-    max-width: 400px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .hero-flex {
+    flex-grow: 1;
+    padding: 2rem;
+    justify-content: end;
+    gap: 1rem;
+  }
+  .hero__introduction {
+    justify-content: center;
+    align-items: end;
+  }
+
+  .hero__introduction > * {
+    width: 75%;
+  }
+
+  .skills__technical,
+  .skills__soft {
+    width: 30%;
+  }
 }

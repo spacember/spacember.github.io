@@ -16,6 +16,10 @@
   color: var(--color-text);
 }
 
+body {
+  background-color: var(--color-background);
+}
+
 .text-xl {
   font-size: x-large;
 }
@@ -33,7 +37,11 @@
   gap: 1rem;
 }
 
-a, ul, li, p, i {
+a,
+ul,
+li,
+p,
+i {
   text-decoration: none;
   list-style-type: none;
   color: inherit;
@@ -147,7 +155,8 @@ a, ul, li, p, i {
 
 /* ------------------------------- media queries ------------------------------- */
 
-@media only screen and (min-width: 640px) {}
+@media only screen and (min-width: 640px) {
+}
 
 @media only screen and (min-width: 768px) {
   .navbar {
@@ -187,4 +196,5 @@ a, ul, li, p, i {
   }
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+}
