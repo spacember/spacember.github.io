@@ -6,3 +6,7 @@ function toggleNavbar() {
     ? (navbarItems.style.display = "none")
     : (navbarItems.style.display = "flex");
 }
+
+function viewProjects() {
+  location.href = "projects.html";
+}

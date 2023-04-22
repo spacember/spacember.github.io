@@ -20,41 +20,39 @@
     <nav id="navbar" class="navbar">
       <div class="navbar__container">
         <a class="navbar__logo" href="index.html">Aditya</a>
-        <a class="navbar__hamberger_icon" onclick="toggleNavbar()">
-          <i class="fa fa-bars fa-2xl"></i>
+        <a class="navbar__hamberger-icon" onclick="toggleNavbar()">
+          <i class="fa fa-bars fa-2x"></i>
         </a>
       </div>
 
-      <section id="navbarItems" class="navbar__items">
-        <ul>
-          <li>
-            <a href="index.html"
-              >Home<i class="fa-solid fa-house-chimney"></i
-            ></a>
-          </li>
-          <li>
-            <a href="projects.html"
-              >Projects<i class="fa-solid fa-list-check"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#">About<i class="fa-solid fa-circle-question"></i></a>
-          </li>
-          <li>
-            <a href="#">Contact<i class="fa-solid fa-phone"></i></a>
-          </li>
-        </ul>
+      <ul id="navbarItems" class="navbar__items">
+        <li class="navbar__items-item">
+          <i class="fa-solid fa-house-chimney"></i>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navbar__items-item">
+          <i class="fa-solid fa-check"></i>
+          <a href="projects.html">Projects</a>
+        </li>
+        <li class="navbar__items-item">
+          <i class="fa-solid fa-circle-question"></i>
+          <a href="#">About</a>
+        </li>
+        <li class="navbar__items-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="#">Contact</a>
+        </li>
+        <button id="buttonChat" class="button button-medium">Let's chat</button>
+      </ul>
 
-        <button class="button button-medium">Let's chat</button>
-      </section>
 
-      <button id="buttonArrowUp" class="button button-arrow button-arrow-up">
+      <button id="buttonArrowUp" class="button button-arrow button-arrow--up">
         <i class="fa-solid fa-arrow-up"></i>
       </button>
 
       <button
         id="buttonArrowDown"
-        class="button button-arrow button-arrow-down"
+        class="button button-arrow button-arrow--down"
       >
         <i class="fa-solid fa-arrow-down"></i>
       </button>
@@ -62,7 +60,7 @@
 
     <header id="bestProject" class="best_project">
       <article class="best_project__introduction">
-        <p class="text-xxl">My projects</p>
+        <h1 class="text-xxl">My projects</h1>
         <p class="text-justify">
           Coding is my passion. I do it at work, in my free time, on weekends
           and sometimes I even dream about code and sometimes I wake up with the
