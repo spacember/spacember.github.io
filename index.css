@@ -10,6 +10,7 @@
 
 /* ------------------------------- section introduction ------------------------------- */
 .hero__introduction {
+  height: calc(100vh - 98px);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -30,7 +31,7 @@
 }
 
 .hero__introduction-title h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .hero__introduction-options {
@@ -64,7 +65,7 @@
   position: relative;
   border-radius: 1rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/images/naruto.jpg") center/cover;
+    url("assets/images/a-happy-employee.jpg") center/cover;
 }
 
 .hero__portrait-description {
@@ -94,17 +95,29 @@
   border-radius: 1rem;
 }
 
-.skills__list {
+.skills__item h2 {
+  margin-bottom: 1rem;
+}
+
+.skills__item h2,
+.skills__item_list {
+  padding: 1rem;
+  background-color: var(--color-background);
+  border-radius: 1rem;
+}
+
+.skills__item_list {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.skills__list li {
+.skills__item_list li {
   display: flex;
   justify-content: space-between;
 }
+/*  */
 
 /* ------------------------------- media queries ------------------------------- */
 
@@ -114,6 +127,7 @@
 @media only screen and (min-width: 768px) {
   .hero {
     flex-direction: row;
+    height: calc(100vh - 152px);
   }
   .hero__introduction,
   .hero__portrait {
@@ -130,9 +144,11 @@
 
 @media only screen and (min-width: 1024px) {
   .hero {
+    height: calc(100vh - 190px);
     padding: 2rem;
     gap: 2rem;
   }
+
   .skills {
     gap: 2rem;
     padding: 0 2rem 2rem;

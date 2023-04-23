@@ -23,6 +23,7 @@ html {
 }
 
 body {
+  width: 1200px;
   max-width: 1200px;
 }
 
@@ -57,7 +58,19 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+}
+
+.navbar__hamberger-icon {
+  margin-right: 1rem;
+}
+
+.navbar__logo {
+  background-image: url("assets/images/logo.png");
+  background-position: center;
+  background-size: cover;
+  width: 90px;
+  background-repeat: no-repeat;
+  height: 50px;
 }
 
 .navbar__items {
@@ -90,7 +103,6 @@ i {
   font-size: medium;
   border-radius: 5px;
   font-weight: 600;
-  font-size: larger;
 }
 
 .button-large {
@@ -146,8 +158,8 @@ i {
 @media only screen and (min-width: 768px) {
   .navbar {
     flex-direction: row;
-    position: relative;
     padding: 2rem;
+    position: relative;
   }
 
   .navbar__hamberger-icon {
@@ -159,7 +171,7 @@ i {
     flex-grow: 1;
     justify-content: center;
     /* will change the following */
-    margin-right: calc(91px);
+    margin-right: calc(130px);
   }
 
   .navbar__items-item {
@@ -170,10 +182,15 @@ i {
     display: none;
   }
 
+  .navbar__items-item a:hover {
+    text-decoration: underline;
+  }
+
   #buttonChat {
     position: absolute;
-    right: 2rem;
-    /* margin-left: auto; */
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   #buttonArrowUp,
@@ -183,4 +200,9 @@ i {
 }
 
 @media only screen and (min-width: 1024px) {
+  .navbar__logo {
+    width: 130px;
+    background-repeat: no-repeat;
+    height: 60px;
+  }
 }
